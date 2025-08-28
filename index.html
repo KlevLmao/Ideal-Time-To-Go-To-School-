@@ -42,7 +42,7 @@
 </head>
 <body>
   <div class="container">
-    <h2>Kapan Kamu Harus Berangkat?</h2>
+    <h2>Kapan Maksimalnya Kamu Harus Berangkat?</h2>
     <form id="timeForm">
       <label for="distance">Masukkan jarak rumahmu ke sekolah (km):</label><br>
       <input type="number" step="0.1" id="distance" required><br>
@@ -86,9 +86,10 @@
       }
 
       document.getElementById("result").innerHTML = 
-        `Ideal departure time:<br> Between <b>${formatTime(earliest)}</b> and <b>${formatTime(latest)}</b>`;
+        `Waktu yang pas:<br> Antara <b>${formatTime(earliest)}</b> sampai <b>${formatTime(latest)}</b> (dan kamu akan sampai maksimal jam 06:45!)`;
     });
   </script>
 </body>
 
 </html>
+
